@@ -1,0 +1,3 @@
+[submodule "sawtooth-channel-dgm-tp"]
+	path = sawtooth-channel-dgm-tp
+	url = https://github.com/trustbridge/sawtooth-channel-dgm-tp
