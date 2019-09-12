@@ -6,10 +6,15 @@ for the purpose of demonstrating the Sawtooth
 Generic Discrete Message Transaction Processor
 (https://github.com/trustbridge/sawtooth-channel-dgm-tp).
 
-Together, this provides a G2G channel component as described at http://edi3.org 
+Together, this provides a G2G channel component
+as described at http://edi3.org 
 
 The code in this repository draws heavily on Apache-2 licenced examples
-from https://github.com/hyperledger. To see which code was added/changed from the original files, grep for "GDM" (`grep -nri gdm ./`). There is outstanding work to improve the attribution in the code (see ticket #1) to ensure compliance with upstream Apache licence conditions.
+from https://github.com/hyperledger. To see which code was added/changed
+from the original files, grep for "GDM" (`grep -nri gdm ./`).
+There is outstanding work to improve the attribution in the code
+(see ticket #1)
+to ensure compliance with upstream Apache licence conditions.
 
 
 Running local demo
