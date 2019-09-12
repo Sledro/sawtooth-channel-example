@@ -52,9 +52,11 @@ WORKDIR /project/sawtooth-core
 
 RUN ls 
 RUN bin/protogen 
-RUN cd sawtooth-channel-dgm-tp/processor && python3 setup.py install
+### TODO: replace with pip install etc
+RUN cd sawtooth-channel-dgm-tp/sawtooth_channel_dgm_tp/processor  \
+    && python3 setup.py install
 RUN cd sdk/python && python3 setup.py install 
 # Above is boilerplate
 # FIXME: move the above into it's own repo and import from docker hub 
 # The next bit is non-generic, it configures this for the dgm-tp
-ENV PYTHONPATH="$PYTHONPATH:/project/sawtooth-core/signing:/project/sawtooth-core/sdk/python:/project/sawtooth-core/sawtooth-channel-dgm-tp/processor"
+ENV PYTHONPATH="$PYTHONPATH:/project/sawtooth-core/signing:/project/sawtooth-core/sdk/python:/project/sawtooth-core/sawtooth-channel-dgm-tp/sawtooth_channel_dgm_tp/processor"

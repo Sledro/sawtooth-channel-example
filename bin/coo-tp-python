@@ -15,9 +15,12 @@ sys.path.insert(0, os.path.join(
     os.path.dirname(os.path.dirname(os.path.realpath(__file__))),
     'sdk', 'python'))
 
+# TODO FIXME use setup.py etc.
 sys.path.insert(0, os.path.join(
     os.path.dirname(os.path.dirname(os.path.realpath(__file__))),
-    'sawtooth-channel-dgm-tp', 'processor'))
+    'sawtooth-channel-dgm-tp',
+    'sawtooth_channel_dgm_tp',
+    'processor'))
 
 
 from sawtooth_coo.processor.main import main  # noqa
